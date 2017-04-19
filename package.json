@@ -5,7 +5,8 @@
   "private": true,
   "dependencies": {
     "egg": "^1.0.0",
-    "lru-cache": "^4.0.2"
+    "lru-cache": "^4.0.2",
+    "taobao-parser": "^1.0.1"
   },
   "devDependencies": {
     "autod": "^2.7.1",

@@ -12,7 +12,7 @@ module.exports = app => {
       let data
       try {
         data = yield parser(baseUrl + url)
-      } catch(err) {
+      } catch (err) {
         throw err
       }
       cache.set(url, data)

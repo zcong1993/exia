@@ -7,20 +7,22 @@ module.exports = app => {
       const url = query.url
       if (!/^https:\/\/s.taobao.com\/search/.test(url)) {
         this.ctx.status = 200
-        return this.ctx.body = {
+        this.ctx.body = {
           status: 600,
           data: 'url error, url must start with https://s.taobao.com/search'
         }
+        return
       }
       let res
       try {
         res = yield service.taobao.index(normalize(url))
-      } catch(err) {
+      } catch (err) {
         this.ctx.status = 200
-        return this.ctx.body = {
+        this.ctx.body = {
           status: 601,
           data: err.message
         }
+        return
       }
       this.ctx.status = 200
       this.ctx.body = {

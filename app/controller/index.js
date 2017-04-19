@@ -8,7 +8,7 @@ module.exports = app => {
       if (!/^https:\/\/s.taobao.com\/search/.test(url)) {
         this.ctx.status = 200
         this.ctx.body = {
-          status: 600,
+          status: 2,
           data: 'url error, url must start with https://s.taobao.com/search'
         }
         return
@@ -19,7 +19,7 @@ module.exports = app => {
       } catch (err) {
         this.ctx.status = 200
         this.ctx.body = {
-          status: 601,
+          status: 3,
           data: err.message
         }
         return

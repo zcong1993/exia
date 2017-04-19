@@ -4,6 +4,7 @@
   "description": "my egg project",
   "private": true,
   "dependencies": {
+    "cross-env": "^4.0.0",
     "egg": "^1.0.0",
     "lru-cache": "^4.0.2",
     "taobao-parser": "^1.0.1"
@@ -22,7 +23,7 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "cross-env EGG_SERVER_ENV=prod node index.js",
     "dev": "egg-bin dev",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",

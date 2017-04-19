@@ -4,18 +4,19 @@
   "description": "my egg project",
   "private": true,
   "dependencies": {
-    "cross-env": "^4.0.0",
-    "egg": "^1.0.0",
+    "egg": "^1.1.0",
     "lru-cache": "^4.0.2",
-    "taobao-parser": "^1.0.1"
+    "taobao-parser": "^1.0.1",
+    "cross-env": "^4.0.0"
   },
   "devDependencies": {
-    "autod": "^2.7.1",
-    "egg-bin": "^3.1.0",
-    "egg-ci": "^1.5.0",
-    "egg-mock": "^3.2.0",
-    "eslint": "^3.18.0",
+    "autod": "^2.8.0",
+    "egg-bin": "^3.3.0",
+    "egg-ci": "^1.6.0",
+    "egg-mock": "^3.4.0",
+    "eslint": "^3.19.0",
     "eslint-config-egg": "^3.2.0",
+    "power-assert": "^1.4.2",
     "supertest": "^3.0.0",
     "webstorm-disable-index": "^1.1.2"
   },
@@ -23,14 +24,15 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "start": "cross-env EGG_SERVER_ENV=prod node index.js",
+    "start": "node index.js",
     "dev": "egg-bin dev",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "autod": "autod",
+    "deploy": "cross-env EGG_SERVER_ENV=prod npm run start"
   },
   "ci": {
     "version": "6"

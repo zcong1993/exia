@@ -1,4 +1,5 @@
 # exia
+[![Build Status](https://travis-ci.org/zcong1993/exia.svg?branch=master)](https://travis-ci.org/zcong1993/exia)
 
 > 一个可以得到淘宝商品搜索信息数据的`API服务端`，基于`eggjs`框架
 

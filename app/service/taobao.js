@@ -2,16 +2,20 @@ const parser = require('../libs/parser')
 
 module.exports = app => {
   class TaobaoService extends app.Service {
-    * index(url) {
+    async index(url) {
+      if (!url) {
+        return
+      }
       const cache = this.ctx.app.cache
       const baseUrl = 'https://s.taobao.com/search?'
       if (cache.has(url)) {
-        console.log(`cached ${url}`)
+        // console.log(`cached ${url}`)
+        this.ctx.logger.info('cached: %j', url)
         return cache.get(url)
       }
       let data
       try {
-        data = yield parser(baseUrl + url)
+        data = await parser(baseUrl + url)
       } catch (err) {
         throw err
       }

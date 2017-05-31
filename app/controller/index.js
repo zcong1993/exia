@@ -2,7 +2,7 @@ const normalize = require('../libs/normalize')
 
 module.exports = app => {
   class IndexController extends app.Controller {
-    * index() {
+    async index() {
       const { query, service } = this.ctx
       const url = query.url
       if (!/^https:\/\/s.taobao.com\/search/.test(url)) {
@@ -15,7 +15,7 @@ module.exports = app => {
       }
       let res
       try {
-        res = yield service.taobao.index(normalize(url))
+        res = await service.taobao.index(normalize(url))
       } catch (err) {
         this.ctx.status = 200
         this.ctx.body = {

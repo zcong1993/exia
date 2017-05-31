@@ -21,12 +21,12 @@
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=7.6.0"
   },
   "scripts": {
     "start": "node index.js",
     "dev": "egg-bin dev",
-    "test": "npm run lint -- --fix && npm run test-local",
+    "test": "npm run lint -- --fix",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",

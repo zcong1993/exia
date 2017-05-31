@@ -17,6 +17,7 @@ module.exports = {
     'eslint-config-egg',
     'supertest',
     'webstorm-disable-index',
+    'cross-env'
   ],
   exclude: [
     './test/fixtures',

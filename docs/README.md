@@ -56,6 +56,10 @@ encode后：'https%3a%2f%2fs.taobao.com%2fsearch%3fq%3dnodejs%26imgfile%3d%26com
 |2|失败|请求url链接不正确|data为错误信息|
 |3|失败|其他错误|data为错误信息|
 
+## Test
+
+因为自动化测试服务均在国外，抓取淘宝网页会出错，所以需要在本地运行测试 `npm run test-local` 或 `yarn test-local`。请在 `app/test` 目录查看。
+
 ## Development
 
 [Development](/development)

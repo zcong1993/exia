@@ -1,4 +1,5 @@
 # exia
+[![CircleCI](https://circleci.com/gh/zcong1993/exia.svg?style=svg)](https://circleci.com/gh/zcong1993/exia)
 [![Build Status](https://travis-ci.org/zcong1993/exia.svg?branch=master)](https://travis-ci.org/zcong1993/exia)
 [![Build status](https://ci.appveyor.com/api/projects/status/usn6qp9364j1uy6s?svg=true)](https://ci.appveyor.com/project/zcong1993/exia)
 

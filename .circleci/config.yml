@@ -9,8 +9,6 @@ jobs:
       - run:
           name: install yarn
           command: 'curl -o- -L https://yarnpkg.com/install.sh | bash'
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: install-npm-wee
           command: yarn

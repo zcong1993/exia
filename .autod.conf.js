@@ -8,6 +8,9 @@ module.exports = {
     'benchmark',
   ],
   dep: [
+    'egg',
+    'egg-lru',
+    'taobao-parser'
   ],
   devdep: [
     'egg-ci',

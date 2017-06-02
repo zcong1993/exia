@@ -6,7 +6,7 @@ module.exports = app => {
       if (!url) {
         return
       }
-      const cache = this.ctx.app.cache
+      const cache = this.ctx.app.lru
       const baseUrl = 'https://s.taobao.com/search?'
       if (cache.has(url)) {
         // console.log(`cached ${url}`)

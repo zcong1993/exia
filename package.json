@@ -5,15 +5,15 @@
   "private": true,
   "dependencies": {
     "egg": "^1.4.0",
-    "lru-cache": "^4.0.2",
+    "egg-lru": "^1.0.0",
     "taobao-parser": "^1.0.1"
   },
   "devDependencies": {
     "autod": "^2.8.0",
-    "cross-env": "^4.0.0",
-    "egg-bin": "^3.4.0",
+    "cross-env": "^5.0.0",
+    "egg-bin": "^3.4.1",
     "egg-ci": "^1.6.0",
-    "egg-mock": "^3.7.0",
+    "egg-mock": "^3.7.1",
     "eslint": "^3.19.0",
     "eslint-config-egg": "^4.2.0",
     "power-assert": "^1.4.2",

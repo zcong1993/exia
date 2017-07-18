@@ -30,6 +30,9 @@ module.exports = app => {
         data: res
       }
     }
+    async example() {
+      await this.ctx.render('example')
+    }
   }
   return IndexController
 }

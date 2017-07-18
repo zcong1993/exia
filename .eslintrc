@@ -10,6 +10,6 @@
     "request": true,
     "mm": true,
     "mock": true,
-    "assert": true,
+    "assert": true
   }
 }
